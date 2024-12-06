@@ -1,0 +1,263 @@
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Initial Navbar Style */
+.navbar-inverse {
+    background-color: #113448; /* Default background color */
+    color: white;
+}
+
+/* Navbar Style After Scrolling */
+.navbar.scrolled {
+    background-color: rgba(17, 52, 72, 0.8); /* Semi-transparent on scroll */
+    opacity: 0.9;
+    color: white;
+}
+ 
+h7{
+	font-size:12px;
+}
+.navbar-brand {
+  background: url(../Images/logo.png) left / contain no-repeat;
+  width: 300px;
+  margin-left:30px;
+}
+h1{
+	margin-left:100px;
+	color:white;
+}
+/* Prevent overlap with content */
+body {
+    padding-top: 50px; /* Adjust this value to match the navbar height */
+}
+
+.bg{
+	background-color:#f3f7f0;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.bg-area{
+	padding:100px;
+}
+    
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    /*min-height:200px;*/
+	height: 100%; /* Make images fill the height */
+    object-fit: cover; /* Ensure the image covers the div without distortion */
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+ 
+/* Ensure the carousel fills the screen's height */
+#myCarousel {
+    height: 100%; /* Full viewport height */
+	/* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+	 
+}
+
+.carousel-inner {
+    height: 100%; /* Inherit height from the carousel */
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.carousel-inner .item {
+    height: 100%; /* Each slide also fills the carousel height */
+}
+
+.carousel-caption {
+	width: 50%;
+	bottom:100px;
+    padding: 20px; /* Optional: Padding for inner content */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent box */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center; /* Centers text inside */
+    margin: 0 auto;
+	margin-bottom:15px;
+}
+
+/* Map */
+.map-section {
+   padding: 2rem
+}
+
+.map-container {
+	height: 600px;
+	background-image: url(../Images/map.png);
+	background-size: contain;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#map {
+    position: relative; /* Make the map container the reference for marker positions */
+     
+}
+
+.marker {
+    width: 20px;         /* Marker size */
+    height: 20px;
+    background-color: red; /* Marker color */
+    border-radius: 50%;  /* Make it circular */
+    position: absolute;  /* Position relative to the map container */
+    transform: translate(-50%, -50%); /* Center the marker at the specified position */
+    cursor: pointer;     /* Change cursor to pointer on hover */
+}
+.myslider{
+	/* margin-right:50px; */
+	display: flex;
+	justify-content: flex-start;
+	border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+}
+
+/************* ACORDIAN   **************/
+.accordion-button{
+	padding:8px!important;
+	background-color:#113448!important;
+	color:white!important;
+}
+
+.accordion-button::after {
+-webkit-filter: grayscale(1) invert(1);
+filter: grayscale(1) invert(1);
+}
+/*************  END ACORDIAN   **************/
+
+.what-we-do {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+    /*height: 400px;  Define height for the container */
+    overflow: hidden; /* Ensure no extra content spills */
+	width:100%;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.what-we-do::before {
+    content: "";
+    background-image: url('../Images/wicklow.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 12px;
+    width: 98.4%;
+    height: 100%;
+    opacity: 0.4; /* Adjust as needed */
+}
+.boxes{
+	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent box */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+	color: white; 
+	border-radius: 10px; 
+	max-width: 500px; 
+	margin: 0 auto;
+	margin-bottom:15px;
+}
+ 
+ /********** AREAS  *******************/
+.area-1 {
+   height: 500px; 
+   background: url(../images/side1.jpg) center center no-repeat;
+   background-size: cover
+}
+.area-2 {
+   height: 500px;  
+   background: url(../images/side2.jpg) center center no-repeat;
+   background-size: cover
+}
+.are1-no-margin{
+	padding-top:0px!important;
+}
+.mt-5 {
+    margin-top: 0 !important;
+}
+.g-4, .gy-4 {
+    --bs-gutter-y: 0rem;
+}
+
+
+
+/*testimonial*/
+.carousel-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    /*background: #f9f9f9;*/
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+.carousel-control.left, .carousel-control.right {
+	background:none;
+}
+.glyphicon-chevron-right, .glyphicon-chevron-left{
+	color:black;
+	right:0!important;
+}
+.glyphicon-chevron-left{
+	color:black;
+	left:0!important;
+}
+.testimonial-img{
+	width: auto!important;
+	height: 100px!important;
+	border-radius: 50%!important;
+	margin-bottom: 10px!important;
+}
+/* end testimonial*/
+
+.center {
+	height:70px;
+	margin: auto;
+	padding: 10px;
+}
+.img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	
+}
+
+/* Add background color and some padding to the footer */
+footer{
+	background-color: #113448; /* Default background color */
+    color: white;
+	padding-top: 25px;
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	align:Center;
+	border:2px solid #113448;
+}   
+ 
