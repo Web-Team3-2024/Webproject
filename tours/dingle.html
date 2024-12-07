@@ -32,13 +32,18 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto"><!--unordered list-->
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 					</li><!--list item-->
 					<li class="nav-item">
 						<a class="nav-link" href="about/about.html">About</a><!--href attribute specifies the URL the link."#" is a placeholder-->
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Our tours</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Our tours</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="tours/dingle.html">Dingle</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Contact</a>
