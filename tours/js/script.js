@@ -12,9 +12,7 @@ function bookNow(bookTour){
         window.location.href='bookings/aquarium.html';//aquarium page
     } 
 }
-function goToCart(){
-    window.location.href='../dingle.html';//back to dingle page,later put the direction to the cart
-}
+
 //https://www.w3schools.com/w3css/w3css_slideshow.asp
 //carousel use
 var myIndex=0;
