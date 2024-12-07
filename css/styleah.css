@@ -53,15 +53,6 @@ h1{
     display: flex;
     flex-direction: column;
 }
-button{
-    background-colour:green;
-    color:white;
-    border: none;
-    cursor: pointer;
-}
-button:hover{
-    background-color: orange;
-}
 .bold{
     font-weight: bold;
 }
@@ -74,15 +65,10 @@ img.rounded {
 #contact-left{
     width: 60%;
 }
-#contact-right{
+#carousel-right{
     width:35%;
     justify-content: center;
     align-items: center;
-}
-
-#postbox{
-    height:100%;
-    min-width: 300px;
 }
 .contact{
     position: fixed;
@@ -94,10 +80,6 @@ img.rounded {
 #contact2{
     text-align: center;
 }
-@media screen and (max-width: 800px) {
-    .responsive-image {
-        display: none;
-    }
 /* Fixed Navbar */
 .navbar {
     position: fixed;
