@@ -34,6 +34,7 @@ h1{
 .white{
     color: white;
     text-decoration:none;
+	text-align:left;
 }
 .form-wrapper{
     display:flex;
@@ -71,6 +72,12 @@ img.rounded {
     justify-content: center;
     align-items: center;
 }
+@media (max-width:600px){
+	#carousel-right{
+		display:none;
+	}
+}
+	
 .contact{
     position: fixed;
     width:100%;
