@@ -27,8 +27,9 @@ h1{
     background-color: cornflowerblue;
 }
 .left{
-    text-align: left;
-    color: white;
+	text-decoration: none;
+    	text-align: left;
+    	color: black;
 }
 .center{
     text-align: center;
