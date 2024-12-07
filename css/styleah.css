@@ -106,6 +106,27 @@ h1{
 	color:white;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Initial Navbar Style */
+.navbar-inverse {
+    background-color: #113448; /* Default background color */
+    color: white;
+}
+
+/* Navbar Style After Scrolling */
+.navbar.scrolled {
+    background-color: rgba(17, 52, 72, 0.8); /* Semi-transparent on scroll */
+    opacity: 0.9;
+    color: white;
+}
+ 
 .navbar-brand {
   background: url(../Images/logo.png) left / contain no-repeat;
   width: 300px;
