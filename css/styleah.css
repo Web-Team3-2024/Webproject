@@ -113,11 +113,13 @@ h1{
     z-index: 1000;
     transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
-
-/* Initial Navbar Style */
-.navbar-inverse {
-    background-color: #113448; /* Default background color */
-    color: white;
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
 /* Navbar Style After Scrolling */
