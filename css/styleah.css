@@ -2,9 +2,6 @@ h1{
     font-family: 'Arial';
     text-align: center;
 }
-.centerh1{
-	text-align:center;
-}
 .contact-container{
     display: flex;
     justify-content: space-between;
