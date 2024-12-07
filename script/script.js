@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         ride: false // Ensure the carousel does not auto-start sliding
     });
 
-    // Example marker data with coordinates and slide indices
+    // Example marker data with coordinates as percentages
     var locations = [
-        { name: "Slide 1", x: 400, y: 250, slideIndex: 0 },
-        { name: "Slide 2", x: 450, y: 350, slideIndex: 1 }
+        { name: "Dingle Penonsula", x: 29, y: 81, slideIndex: 0 }, // Percentages: 30% from left, 81% from top
+        { name: "Slide 2", x: 45, y: 35, slideIndex: 1 }  // Percentages: 45% from left, 35% from top
     ];
 
     // Add markers and bind click events to navigate carousel
@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var marker = document.createElement("div");
         marker.className = "marker";
         marker.title = location.name; // Tooltip for the marker
-        marker.style.left = location.x + "px"; // Set horizontal position
-        marker.style.top = location.y + "px";  // Set vertical position
+        marker.style.position = "absolute";
+        marker.style.left = location.x + "%"; // Use percentage for horizontal position
+        marker.style.top = location.y + "%";  // Use percentage for vertical position
 
         // Attach a click event to each marker
         marker.addEventListener("click", function () {
@@ -31,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append the marker to the map container
         mapContainer.appendChild(marker);
+    });
+
+    // Adjust marker positions on window resize
+    window.addEventListener("resize", function () {
+        // Markers are already percentage-based, so no recalculation is needed
+        // This ensures the map remains properly scaled with its markers
     });
 });
 
