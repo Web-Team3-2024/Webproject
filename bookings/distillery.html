@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dingle Distillery</title>
+    <link rel="icon" href="../images/favicon.png"><!--Favicon -->
+    <!-- Cart script -->
+    <script src="script/cart.js"></script>
+	<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--W3.CSS library-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--css-->
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+	<nav class="navbar navbar-expand-lg navbar-dark"><!--Bootstrap nav bar-->
+		<div class="container-fluid">
+			<!--Brand,name of website-->
+			<a class="navbar-brand" href="#">
+				<h1>Wonders of Ireland</h1><!--<h1> in <a> makes the brand clickable-->
+			</a>
+			<!--Toggle Button for Mobile View(smaller screens)-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Collapsible Content -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto"><!--unordered list-->
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li><!--list item-->
+					<li class="nav-item">
+						<a class="nav-link" href="../about/about.html">About</a><!--href attribute specifies the URL the link."#" is a placeholder-->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<li class="nav-item" style="margin-left:30px;">
+						<!---->   <a class="nav-link" href="cart.html"><span id="items"></span><img src="../images/cart.png" class="img-fluid" width="30" alt="Shopping Cart" style="margin-right:40px;"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!--end of nav bar-->	
+    <div class="container mt-5 text-center">
+        <h2>Welcome to the Dingle Distillery Page</h2>
+        <div class="w3-container"><!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_animated-->
+            <div class="w3-content w3-section"><!--W3School-->
+                <img class="mySlides w3-animate-top" src="../images/distillery/barrels.jpg"alt="Dingle Founding Fathers">
+                <img class="mySlides w3-animate-bottom" src="../images/distillery/bottles.jpg"alt="Bottles without labels">
+                <img class="mySlides w3-animate-top" src="../images/distillery/distillery.jpg"alt="Barrels in the distilliry">
+                <img class="mySlides w3-animate-bottom" src="../images/distillery/wb1.jpg"alt="WB1,WB2" >
+                <img class="mySlides w3-animate-top" src="../images/distillery/barrels2.jpg"alt="Barrels with whisky">
+                <img class="mySlides w3-animate-bottom" src="../images/distillery/bottling.jpg"alt="Bottles without labels">
+                <img class="mySlides w3-animate-top" src="../images/distillery/distillery2.jpg"alt="Distillery">
+                <img class="mySlides w3-animate-bottom" src="../images/distillery/wb2.jpg"alt="Distillery">
+            </div>
+        </div>      
+        <hr><!--horizontal line-->      
+        <p><!-- a paragraph -->
+        This guided tour will take you through all aspects of Whiskey, Gin & Vodka production in our independent and artisan Distillery. During the tour, you will get the opportunity to sample our spirits and see our production site. Please note that production may not be in operation on certain days or afternoons, this depends on the production schedule. <u>Valid ID required upon tour check in.</u></p>
+        <ul class="my-list"><!--unordered list to use bullets-->
+            <b>Prices:</b><!--text bold-->
+            <li>€123 - For Adult Tour</li><!--list item-->
+            <li>€119 - For Senior Tour</li>
+            <li>€119 - For Student Tour</li>
+            <!--inline CSS-->
+            <li style=color:red>NO ONE UNDER THE AGE OF 18 YEARS IS PERMITTED ON TOUR</li>
+            <b>Duration:</b>
+            <li>1 hour and 15 minutes</li>
+            <b>Language:</b>
+            <li>English</li>
+        <ul><br>
+        <div style="text-align:center;">
+		<!----><button class="btn btn-primary" onclick="addToCart(333, 'Distillery Tour',123,'../images/distillery/bottles.jpg','1 hour and 15 minutes tour')">Start My Journey</button>
+            <!--button-a clickable button element.onclick-event handler.goToCart() is a function in JS,what is called by clicling the button-->
+        </div>             
+    </div>
+	<!--Footer-->
+	<footer class="text-center py-4">
+		<div class="container">
+			<div class="row">
+				<!--Logo Section-->
+				<div class="col-sm-3 border-end">
+					<img src="../images/logo.png" class="img-fluid" style="width:80%;" alt="Logo">
+				</div>
+			    <!--Vision Section-->
+			    <div class="col-sm-3 border-end">
+				    <h3>Our Vision</h3>
+				    <p>To inspire the world to discover and cherish Ireland through exceptional tourism and sustainable practices.</p>
+			    </div>
+			    <!--Mission Section-->
+			    <div class="col-sm-3 border-end">
+				    <h3>Our Mission</h3>
+				    <p>To create unforgettable, authentic travel experiences that showcase Ireland's beauty, culture, and history.</p>
+			    </div>
+			    <!--Contact Section-->
+				<div class="col-sm-3">
+					<h3>Contact</h3>
+					<p>Some text...</p>
+				</div>
+			</div>
+		</div>
+        <hr style="height:2px;border-width:0;color:white;background-color:white;"><!--inline CSS style for horizontal line-->
+		<h4>&#9426;Wonders Of Ireland 2024</h4><!--&#9426;represents the Copyright symbol in a circle-->
+	</footer><!--End Footer-->
+    <script src="../js/script.js"></script><!--an external JavaScript file-->
+</body>
+</html>
