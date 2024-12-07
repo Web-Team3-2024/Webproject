@@ -32,7 +32,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!-- Brand -->
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<h1>Wonders of Ireland</h1>
 				</a>
 				<!-- Toggle Button for Mobile View -->
@@ -48,9 +48,15 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Projects</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Our tours</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="tours/dingle.html">Dingle</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
 						</li>
+
 						<li class="nav-item">
 							<a class="nav-link" href="#">Contact</a>
 						</li>
@@ -138,15 +144,15 @@
 								<!-- Carousel Items -->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="Images/wicklow.jpg" class="d-block w-100" alt="Wicklow Image">
+										<img src="Images/Dingle.jpg" class="d-block w-100" alt="Dingle Peninsula">
 										<div class="carousel-caption d-none d-md-block">
-											<h3>Sell $</h3>
-											<p>Money Money.</p>
-											<a href="#" class="btn btn-primary btn-sm">Explore this tour</a>
+											<h3>Dingle Peninsula</h3>
+											<p>Explore the beauty of Dingle Peninsula</p>
+											<a href="tours/dingle.html" class="btn btn-primary btn-sm">Explore this tour</a>
 										</div>
 									</div>
 									<div class="carousel-item">
-										<img src="Images/wicklow2.jpg" class="d-block w-100" alt="Wicklow Image 2">
+										<img src="Images/wicklow.jpg" class="d-block w-100" alt="Wicklow Image 2">
 										<div class="carousel-caption d-none d-md-block">
 											<h3>More Sell $</h3>
 											<p>Lorem ipsum...</p>
@@ -173,7 +179,7 @@
 
 		<!-- Section: What We Do -->
 		<div class="what-we-do justify-content-center container-fluid px-4">
-			<h4 class="mb-4 text-center">What We Do</h4>
+			<h2 class="mb-4 text-center">What We Do</h2>
 			<div class="row g-4 justify-content-center">
 				<!-- Card 1: Tailored Tours -->
 				<div class="col-12 col-sm-6 col-md-4">
@@ -219,7 +225,7 @@
 						<h3 class="mb-3">Discover Ireland – A Land of Beauty and Magic</h3>
 						<h5 class="mb-3">Welcome to Ireland, a place where history, culture, and natural wonders blend to create unforgettable experiences...</h5>
 						<h5 class="mb-4">...where every corner invites you to explore, dream, and fall in love. <br>Plan your adventure today!</h5>
-						<a onclick="addToCart(1, 'Cliff of Moher Tour', 350, 'Images/Downpatrick-Head.jpg', 'Two day tour with guide and ride')" class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Explore Our Tours</a>
+						<a onclick="addToCart(1, 'Cliff of Moher Tour', 350, 'images/Downpatrick-Head.jpg', 'Two day tour with guide and ride')" class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Explore Our Tours</a>
 					</div>
 				</div>
 			</div>
@@ -228,7 +234,7 @@
 				<!-- Left Accordion Section --> <!--  Only HTML used for acordian from: https://codepen.io/tofanelli/pen/waadRY  -->
 				<div class="col-lg-6" Style="background-color:#f3f7f0;">
 					<div class="p-4">
-						<h4 class="mb-4 text-center">Immerse Yourself in Ireland</h4>
+						<h2 class="mb-4 text-center">Immerse Yourself in Ireland</h2>
 						<div class="accordion" id="accordionExample">
 							<!-- Accordion Item 1 -->
 							<div class="accordion-item">
@@ -301,7 +307,7 @@
 		<div class="container-fluid py-5 bg-light">
 			<div class="row justify-content-center">
 				<div class="col-lg-10">
-					<h4 class="text-center mb-5">What people say about us</h4>
+					<h2 class="text-center mb-5">What people say about us</h2>
 					<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 						<!-- Carousel Content - Wrapper for slides -->
 						<div class="carousel-inner">
@@ -382,15 +388,15 @@
 		<div class="container-fluid py-5 bg-light">
 			<div class="row">
 				<!-- Image Section -->
-				<div class="col-lg-6 d-flex justify-content-center align-items-center">
+				<div class="col-lg-6 d-flex justify-content-end align-items-center">
 					<img src="Images/bottom.jpg" class="img-fluid" alt="Description of Image">
 				</div>
 				<!-- Text Section -->
-				<div class="col-lg-6 d-flex justify-content-center align-items-center">
+				<div class="col-lg-4 d-flex justify-content-center align-items-center">
 					<div class="text-container d-flex flex-column justify-content-center align-items-center text-center h-100">
-						<p class="mb-4" style="font-size: 1.25rem; color: #495057; line-height: 1.8;">
+						<h4>
 							Every step takes you closer to extraordinary landscapes, legendary tales, and cherished memories. <br>Start your adventure today!
-						</p>
+						</h4>
 						<a onclick="addToCart(2, 'Wiclow Mountain Tour', 250, 'Images/willage.jpg', 'Two day tour with guide and ride')"class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Explore Our Tours</a>
 					</div>
 				</div>
@@ -422,7 +428,8 @@
 					<!-- Contact Section -->
 					<div class="col-sm-3">
 						<h3>Contact</h3>
-						<p>Some text...</p>
+						<p>Tel: 01 353 89 789 654</p>
+						<p>email: wonders@gmail.com</p>
 					</div>
 				</div>
 			</div>
