@@ -61,6 +61,19 @@ h1{
 #contact-left{
     width: 60%;
 }
+#corouselmain {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+.carousel-inner img {
+    height: 400px; 
+    object-fit: cover; /
+  }
+.content-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
 #carousel-right{
     width:35%;
     justify-content: center;
