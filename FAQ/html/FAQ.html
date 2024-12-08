@@ -19,8 +19,12 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
     <!--using bootstrap to provide oveall look of page-->
 
-    <link rel="stylesheet" href="faqstyle/style.css"/><!-- lint to CSS styles file-->
+    <link rel="stylesheet" href="../faqstyle/style.css"/><!-- lint to CSS styles file-->
 
+	<script>
+		// Call displayCart on page load
+		document.addEventListener("DOMContentLoaded", getItemsNumber);
+	</script>
 
 
 
@@ -30,7 +34,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!-- Brand -->
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="../../index.html">
 					<h2>Wonders of Ireland</h2>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -39,16 +43,21 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="../../tours/about/about.html">About</a>
 						</li>
+						<li class="nav-item dropdown">
+						   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Our tours</a>
+							 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								 <li><a class="dropdown-item" href="tours/dingle.html">Dingle</a></li>
+								 <li><a class="dropdown-item" href="whiteparkbay.html">White Park Bay</a></li>
+								 <li><a class="dropdown-item" href="Sligo2/html/sligo.html">Sligo</a></li>
+							 </ul>
+						 </li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="../../Contact/contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -151,9 +160,9 @@
             <!-- Contact Section -->
             <div class="col-sm-3">
                 <h3>Contact</h3>
-                <p>Some text...</p>
-
-
+               	   <p>Tel: 01 353 89 789 654</p>
+		   <p>email: wonders@gmail.com</p>
+		   <p><a class="nav-link" href="FAQ/html/FAQ.html">FAQ</a></p>
             </div>
         </div>
     </div>
