@@ -111,7 +111,7 @@ footer{
 } */
 
 .navbar-brand {
-  background: url(../Images/logo.png) left / contain no-repeat;
+  background: url(../../Images/logo.png) left / contain no-repeat;
   width: 300px;
   margin-left:30px;
 }
