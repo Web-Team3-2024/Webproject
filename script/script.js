@@ -1,4 +1,5 @@
  
+ //Function for map and carouser, activated on page load
 document.addEventListener("DOMContentLoaded", function () {
     // Get carousel and map container elements
     var secondCarousel = document.getElementById('mapCarousel'); // Carousel element
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Example marker data with coordinates as percentages
     var locations = [
-        { name: "Dingle Penonsula", x: 29, y: 81, slideIndex: 0 }, // Percentages: 30% from left, 81% from top
+        { name: "Dingle Peninsula", x: 29, y: 81, slideIndex: 0 }, // Percentages: 30% from left, 81% from top
         { name: "Slide 2", x: 45, y: 35, slideIndex: 1 }  // Percentages: 45% from left, 35% from top
     ];
 
@@ -32,12 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append the marker to the map container
         mapContainer.appendChild(marker);
-    });
-
-    // Adjust marker positions on window resize
-    window.addEventListener("resize", function () {
-        // Markers are already percentage-based, so no recalculation is needed
-        // This ensures the map remains properly scaled with its markers
     });
 });
 
