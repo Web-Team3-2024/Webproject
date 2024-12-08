@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Ilija Karjakovic -->
+
+    <!-- Website Title -->
+    <title>Wonders of Ireland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Style Sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Cart script -->
+    <script src="script/cart.js"></script>
+	
+	<script>
+		// Call displayCart on page load
+		document.addEventListener("DOMContentLoaded", getItemsNumber);
+	</script>
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.png">
+</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<!-- Brand -->
+				<a class="navbar-brand" href="index.html">
+					<h1>Wonders of Ireland</h1>
+				</a>
+				<!-- Toggle Button for Mobile View -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Collapsible Content -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Our tours</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="tours/dingle.html">Dingle</a></li>
+								<li><a class="dropdown-item" href="whiteparkbay.html">White Park Bay</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+						<li class="nav-item" style="margin-left:30px;">
+							<a class="nav-link" href="cart.html"><span id="items"></span><img src="Images/cart.png" class="img-fluid" width="30" alt="Tailored Tours" style="margin-right:40px;"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Nav Bar -->
+
+		<!-- Header Carousel -->
+			<!-- Header   -->
+		<div class="container-fluid">
+			 <div class="col-lg-12 d-flex justify-content-center align-items-center">
+				 <img src="Images/White-Park-Bay1.jpg" class="img-fluid" alt="White Park Bay">
+				 <div class="header-caption d-none d-md-block">
+					<h2>Whitepark Bay</h2>
+					<p>Beautiful stretch of golden sand on the North Antrim coast</p>							
+				</div>
+			</div>
+		</div>
+		<!-- End Header   -->
+
+		 
+
+		<!-- Section: What We Do -->
+		<div class="justify-content-center container-fluid px-4 bg border-bottom">
+			<h3 class="mb-4 text-center">Whitepark Bay Tour</h3>
+			<div class="row g-4 justify-content-center">
+				<!-- Card 1: Tailored Tours -->
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="d-flex flex-column align-items-center text-center p-3 boxes">
+						<h5>Tailored Tours</h5>
+						<p>We create personalized itineraries that immerse you in Ireland’s beauty, from historic castles to scenic landscapes.</p>
+						<a onclick="addToCart(9, 'Whitepark Bay Tour', 350, 'Images/White-Park-Bay-cart.jpg', 'Three day tour with guide and transport')"class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Book This Tour</a>
+					</div>
+				</div>			 
+			</div>
+		</div>
+		<!-- End Section: What We Do -->
+
+		<!-- Introduction Section -->
+		<div class="container-fluid px-4">
+			<div class="row g-4">
+				<!-- Left Image Section -->
+				<div class="col-lg-6 area-3">
+					<div class="text-container d-flex justify-content-center align-items-center h-100">
+						<!-- Image background -->
+					</div>
+				</div>
+
+				<!-- Right Text Section -->
+				<div class="col-lg-6 bg">
+					<div class="text-container d-flex flex-column justify-content-center align-items-center text-center h-100">
+						<h3 class="mb-3">Discover Whitepark Bay – A Guide To The Breathtaking Whitepark Bay Beach In Antrim</h3>
+						<h5 class="mb-3">The spectacular sandy beach forms a white arc between two headlands on the North Antrim coast. In this secluded location, even on a busy day there is plenty of room for quiet relaxation.</h5>
+						<h5 class="mb-4">The stunning Whitepark Bay Beach in Antrim is one of the most beautiful beaches in Ireland.<br>Plan your adventure today!</h5>
+						<a onclick="addToCart(1, 'Cliff of Moher Tour', 350, 'images/Downpatrick-Head.jpg', 'Two day tour with guide and ride')" class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Explore Our Tours</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-4 mt-5 are1-no-margin">
+				<!-- Left Accordion Section --> <!--  Only HTML used for acordian from: https://codepen.io/tofanelli/pen/waadRY  -->
+				<div class="col-lg-6" Style="background-color:#f3f7f0;">
+					<div class="p-4">
+						<h2 class="mb-4 text-center">About Whitepark Bay </h2>
+						<div class="accordion" id="accordionExample">
+							<!-- Accordion Item 1 -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Immerse in History
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+This spectacular sandy beach forms a white arc between two headlands on the North Antrim Coast. Its secluded location means that even on a busy day there is plenty of room for quiet relaxation. White Park Bay has been in the care of the National Trust since 1938 and it remains one of the most natural coastline sites in N Ireland. The beach is backed by ancient dunes and species rich chalk grasslands, which are carpeted in rare plants, including many orchids. The site is also fossil rich with archaeological evidence everywhere.
+									</div>
+								</div>
+							</div>
+							<!-- Accordion Item 2 -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Location
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+Located in Ballintoy, on the north Antrim coast, Whitepark Bay is 6.5 miles east of the Old Bushmills Distillery and 10 minutes’ drive from the Giant’s Causeway. If you’re driving from Belfast, it takes about 75 minutes.
+									</div>
+								</div>
+							</div>
+							<!-- Accordion Item 3 -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Things to do at Whitepark Bay Beach
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+<b>1. Soak up the scenery from the viewpoint</b><br>
+Whitepark Bay Beach is frequently the subject of local artworks as it is truly breathtaking. Set in an Area of Outstanding Natural Beauty, the best view is from the lay-by on the clifftop above the beach.
+The curving light-coloured sand is backed with white chalk cliffs and topped by lush green pastures in either direction. Many people drive down at sunset as it is one of the great spectacles of this coastline.
+Turn around to face inland and you’ll see an ancient cairn or stone hut. It is a passage grave, situated here to perfectly capture the sun’s rays on the Midsummer Solstice.
+<br>
+<b>2. Head off on the walk</b><br>
+Once you’ve had your fill of the view, the clifftop walk beckons. The out-and-back walk is 1.4 miles each way. Descend the steps from the car park/ viewpoint and follow the winding lane past the derelict Youth Hostel and 18th century “hedge school” building nearby.
+Continue to the beach, then turn right and walk east along the sand for about a mile. You’ll be accompanied by rolling Atlantic waves and seabirds.
+At the headland, turn and retrace your steps or continue to Ballintoy Harbour (an extra mile) which is only walkable at low tide.
+<b>3. Watch out for the cows… yes, cows!</b><br>
+Cattle frequently roam across the sand, making an incongruous sight. In fact, they are said to be the most photographed cows in Northern Ireland!
+Farmers are allowed to let their cattle roam and graze on the dunes as part of a nature conservation management agreement that helps keep the grass short.
+This beautiful area is also rich in flora and fauna including rare orchids. Along with grazing farm animals and wild rabbits, look out for gannets and terns diving in the waves. The little wading birds that nest in the nearby dunes are ringed plovers.
+									</div>
+								</div>
+							</div>
+							<!-- Accordion Item 4 -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Meet the People
+									</button>
+								</h2>
+								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+Definitely worth the visit if you're looking for a quieter beach, with stunning views and even it's own herd of cows pottering around! Even on a holiday day there were few people around, so grab a book and soak up the peace and quiet
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end accordian -->
+					</div>
+				</div>
+				
+				<!-- Right Image Section -->
+				<div class="col-lg-6 area-4">
+					<div class="text-container d-flex justify-content-center align-items-center h-100">
+						<!-- Image background -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Introduction Section -->
+
+		<!-- Bottom Section -->
+		<div class="container-fluid py-5 bg-light border-top">
+			<div class="row">
+				<!-- Image Section -->
+				<div class="col-lg-6 d-flex justify-content-end align-items-center">
+					<img src="Images/bottom2.jpg" class="img-fluid" alt="Description of Image">
+				</div>
+				<!-- Text Section -->
+				<div class="col-lg-4 d-flex justify-content-center align-items-center">
+					<div class="text-container d-flex flex-column justify-content-center align-items-center text-center h-100">
+						<h5>
+							
+Whitepark Bay beach is backed by ancient dunes that provide a range of rich habitats, a haven for wildlife, with diverse habitats that house butterflies, orchids, birds, otters and sea life.
+
+Enjoy lazy summer days, picnics, making sandcastles and long walks. You'll find that even on a busy day, this is a secluded and relaxing place to be. Look for the Elephant Rock.
+
+ <br><br>Start your adventure today!<br><br>
+						</h5>
+						<a onclick="addToCart(9, 'Whitepark Bay Tour', 350, 'Images/White-Park-Bay-cart.jpg', 'Three day tour with guide and transport')"class="btn btn-primary btn-lg px-4 py-2" style="font-size: 1.2rem;">Book This Tour</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Bottom Section -->
+
+		<!-- Footer -->
+		<footer class=" text-center py-4">
+			<div class="container">
+				<div class="row">
+					<!-- Logo Section -->
+					<div class="col-sm-3 border-end">
+						<img src="Images/logo4.png" class="img-fluid" style="width: 80%;" alt="Logo">
+					</div>
+
+					<!-- Vision Section -->
+					<div class="col-sm-3 border-end">
+						<h3>Our Vision</h3>
+						<p>To inspire the world to discover and cherish Ireland through exceptional tourism and sustainable practices.</p>
+					</div>
+
+					<!-- Mission Section -->
+					<div class="col-sm-3 border-end">
+						<h3>Our Mission</h3>
+						<p>To create unforgettable, authentic travel experiences that showcase Ireland's beauty, culture, and history.</p>
+					</div>
+
+					<!-- Contact Section -->
+					<div class="col-sm-3">
+						<h3>Contact</h3>
+						<p>Tel: 01 353 89 789 654</p>
+						<p>email: wonders@gmail.com</p>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			 <h7>&#9426; Wonders Of Ireland 2024 </h7>
+		</footer>
+		<!-- End Footer -->
+
+	</body>
+ 
+</html>
