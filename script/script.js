@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var locations = [
         { name: "Dingle Peninsula", x: 29, y: 81, slideIndex: 0 }, // Percentages: 30% from left, 81% from top
         { name: "Whitepark Bay", x: 66, y: 4, slideIndex: 1 },  // Percentages: x% from left, y% from top
-        { name: "Sligo", x: 46, y: 29, slideIndex: 2 } 
+        { name: "Sligo", x: 46, y: 29, slideIndex: 2 },
+        { name: "Trim", x: 63, y: 46, slideIndex: 3 } 
     ];
 
     // Add markers and bind click events to navigate carousel
