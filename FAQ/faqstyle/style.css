@@ -18,7 +18,10 @@ main {
     padding: 2em; /* Adds padding to the main content area */
 }
 
-
+h1{
+	margin-left:100px;
+	color:white;
+}
 #faq {
     background-color: white; /* Sets the background color of the FAQ section */
     padding: 2em;
