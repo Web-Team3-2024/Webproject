@@ -104,7 +104,7 @@ h1{
 
 /* Initial Navbar Style */
 .navbar-inverse {
-    background-color: #113448; /* Default background color */
+    background-color: #113448!important; /* Default background color */
     color: white;
 }
 
