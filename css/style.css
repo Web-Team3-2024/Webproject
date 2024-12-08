@@ -25,8 +25,8 @@ h7{
 	font-size:12px;
 }
 .navbar-brand {
-  background: url(../Images/logo4.png) left / contain no-repeat;
-  width: 300px;
+  background: url(../Images/logo.png) left / contain no-repeat;
+  width: auto;
   margin-left:30px;
 }
 h1{
@@ -112,13 +112,14 @@ body {
 }
 
 .marker {
-    width: 20px;         /* Marker size */
-    height: 20px;
-    background-color: red; /* Marker color */
-    border-radius: 50%;  /* Make it circular */
-    position: absolute;  /* Position relative to the map container */
-    transform: translate(-50%, -50%); /* Center the marker at the specified position */
-    cursor: pointer;     /* Change cursor to pointer on hover */
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-color: red;
+    border-radius: 50%;
+    position: absolute; /* Ensure absolute positioning inside map container */
+    transform: translate(-50%, -50%); /* Center marker on the position */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .myslider{
 	/* margin-right:50px; */
@@ -156,7 +157,7 @@ filter: grayscale(1) invert(1);
 
 .what-we-do::before {
     content: "";
-    background-image: url(../Images/wicklow.jpg);
+    background-image: url('../Images/wicklow.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -182,12 +183,12 @@ filter: grayscale(1) invert(1);
  /********** AREAS  *******************/
 .area-1 {
    height: 500px; 
-   background: url(../Images/side1.jpg) center center no-repeat;
+   background: url(../images/side1.jpg) center center no-repeat;
    background-size: cover
 }
 .area-2 {
    height: 500px;  
-   background: url(../Images/side2.jpg) center center no-repeat;
+   background: url(../images/side2.jpg) center center no-repeat;
    background-size: cover
 }
 .are1-no-margin{
@@ -199,7 +200,16 @@ filter: grayscale(1) invert(1);
 .g-4, .gy-4 {
     --bs-gutter-y: 0rem;
 }
-
+.area-3 {
+   height: 500px; 
+   background: url(../images/side3.jpg) center center no-repeat;
+   background-size: cover
+}
+.area-4 {
+   height: 500px;  
+   background: url(../images/side4.jpg) center center no-repeat;
+   background-size: cover
+}
 
 
 /*testimonial*/
@@ -261,3 +271,17 @@ footer{
 	border:2px solid #113448;
 }   
  
+/*  HEADER IMG  */
+.header-caption{
+	width: 40%;
+	top:300px;
+    padding: 20px; /* Optional: Padding for inner content */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent box */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center; /* Centers text inside */
+    margin: 0 auto;
+	margin-bottom:15px;
+	position:absolute;
+}
