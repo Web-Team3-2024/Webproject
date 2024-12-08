@@ -84,21 +84,6 @@ footer{
 
 
 
-/*Home link style*/
-a{
-    position:absolute;
-    top:10px;/*distance from the top*/
-    right:10px;/*distance from the right edge*/
-    padding:10px 15px;/*padding inside the element*/
-    color:#113448;/*text color*/
-    text-decoration:none;/*remove underline*/
-    font-weight:bold;/*text bold*/
-    font-size:110%;/*font size*/
-}
-
-
-
-
 
 
 
