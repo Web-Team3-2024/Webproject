@@ -117,59 +117,7 @@ footer{
 }
 
 
-
  
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*horizontal line*/
-hr{ 
-    border:0;/*remove default value*/
-    height:2px;
-    background:#113448;
-    margin:20px 5px;/*vertical spacing above and below*/
-}
-ul{
-    list-style-type:circle;/*circle bullets*/
-    padding-left:20px; 
-    text-align:left;
-}
-ul li::marker{/*change the color of bullets*/
-    color:#113448; 
-    font-size:110%;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
 .w3-content{
