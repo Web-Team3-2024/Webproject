@@ -9,12 +9,7 @@
     transform-origin:center;
     border:1px solid #BFBFBF;
 }
-.rotate_right{
-    transform:rotate(7deg);
-}
-.rotate_left{
-    transform:rotate(-7deg);
-}
+
   /*buttons style*/
 .btn-primary{
     background-color:chocolate;
