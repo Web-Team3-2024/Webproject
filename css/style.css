@@ -60,6 +60,9 @@ body {
     .carousel-caption {
       display: none; 
     }
+	.header-caption{
+		display: none; 
+	}
   }
 
  
