@@ -95,6 +95,7 @@ h1{
 }
 /* Fixed Navbar */
 .navbar {
+	background-color: #113448!important;
     position: fixed;
     top: 0;
     width: 100%;
