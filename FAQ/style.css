@@ -1,0 +1,65 @@
+
+
+body {
+    font-family: Arial, sans-serif;  /* Sets the font family for the entire page */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50; /* Sets the background color of the header */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 2em; /* Adds padding to the main content area */
+}
+
+
+#faq {
+    background-color: white; /* Sets the background color of the FAQ section */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 1.5em;  /* Adds space between FAQ items */
+}
+
+.faq-item h3 {
+    margin: 0; /* Removes default margin */
+    color: #333;  /* Sets the text color of the FAQ questions */
+}
+
+.faq-item p {
+    margin: 0.5em 0 0; /* Adds space above the FAQ answers */
+    color: #666; /* Sets the text color of the FAQ answers */
+}
+
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+}    
+
+.faq-section{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
