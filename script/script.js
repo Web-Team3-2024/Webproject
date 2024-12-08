@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Example marker data with coordinates as percentages
     var locations = [
         { name: "Dingle Peninsula", x: 29, y: 81, slideIndex: 0 }, // Percentages: 30% from left, 81% from top
-        { name: "Slide 2", x: 45, y: 35, slideIndex: 1 }  // Percentages: 45% from left, 35% from top
+        { name: "Whitepark Bay", x: 66, y: 4, slideIndex: 1 }  // Percentages: x% from left, y% from top
     ];
 
     // Add markers and bind click events to navigate carousel
