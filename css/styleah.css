@@ -58,12 +58,6 @@ h1{
 .bold{
     font-weight: bold;
 }
-img.rounded {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-  }
 #contact-left{
     width: 60%;
 }
@@ -82,8 +76,6 @@ img.rounded {
     position: fixed;
     width:100%;
     bottom: 0%;
-    background-color: yellowgreen;
-    color: white;
 }
 #contact2{
     text-align: center;
