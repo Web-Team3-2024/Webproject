@@ -1,0 +1,161 @@
+
+
+/*https://www.w3schools.com/cssref/tryit.php?filename=trycss3_image_gallery*/
+
+.card{
+    padding:10px;
+    background-color:rgb(135, 163, 135);
+    box-shadow:10px 10px 5px #aaaaaa;
+    transform-origin:center;
+    border:1px solid #BFBFBF;
+}
+
+  /*buttons style*/
+.btn-primary{
+    background-color:#113448;
+    color:white;
+}
+
+
+
+
+
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Initial Navbar Style */
+.navbar-inverse {
+    background-color: #113448; /* Default background color */
+    color: white;
+}
+
+/* Navbar Style After Scrolling */
+.navbar.scrolled {
+    background-color: rgba(17, 52, 72, 0.8); /* Semi-transparent on scroll */
+    opacity: 0.9;
+    color: white;
+}
+h1{
+	margin-left:100px;
+	color:rgb(255, 255, 255);
+}
+
+.navbar-brand {
+  background: url(../Images/logo.png) left / contain no-repeat;
+  width: 300px;
+  margin-left:30px;
+}
+
+
+
+
+
+
+/* Add background color and some padding to the footer */
+footer{
+	background-color: #113448; /* Default background color */
+    color: white;
+	padding-top: 25px;
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	align:Center;
+	border:2px solid #113448;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Home link style*/
+a{
+    position:absolute;
+    top:10px;/*distance from the top*/
+    right:10px;/*distance from the right edge*/
+    padding:10px 15px;/*padding inside the element*/
+    color:#113448;/*text color*/
+    text-decoration:none;/*remove underline*/
+    font-weight:bold;/*text bold*/
+    font-size:110%;/*font size*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*horizontal line*/
+hr{ 
+    border:0;/*remove default value*/
+    height:2px;
+    background:#113448;
+    margin:20px 5px;/*vertical spacing above and below*/
+}
+ul{
+    list-style-type:circle;/*circle bullets*/
+    padding-left:20px; 
+    text-align:left;
+}
+ul li::marker{/*change the color of bullets*/
+    color:#113448; 
+    font-size:110%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+.w3-content{
+    max-width:100%;/*full width*/
+    text-align:center;/*center align*/
+}
+.mySlides{
+    display:none;
+    width:100%;
+    max-height:70vh;
+    object-fit:cover;
+}
+
+

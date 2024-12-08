@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en"><!--Opening html tag defining language as english-->
+
+<head><!--Includes metadata settngs for character coding, viewport, keywords, general description-->
+
+    <meta charset="UTF-8"><!-- identifies character coding standard-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport settings-->
+    <meta name="keywords" content="Ireland,Sligo,Tour"><!--Identify keywords for search engine-->
+    <meta name="description" content="Explore Sligo,Ireland with our exclusive tours.Book your tour today to experience stunning coastlines,Irish traditions,and more!">
+
+    </head>
+    <title>Sligo</title><!--Sets name displayed in browser tab-->
+
+    <link rel="icon" href="images/favicon.png"><!--Favicon XXX-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--using bootstrap to provide oveall look of page-->
+
+    <link rel="stylesheet" href="style/style.css"/><!-- lint to CSS styles file-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body><!--  The cvontent-->  
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <h1>Wonders of Ireland</h1>
+        </a>
+        <!-- Toggle Button for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar -->
+
+
+
+
+
+
+
+
+
+
+    <div class="main text-center"><!--div container-->
+
+        <h1>SLIGO IS INVITING</h1><!--main heading-->   
+
+        <br> <!--Line break -->
+
+             <section><!--defines content within a section of the page-->
+                    Sligo boasts a stunning, uninterrupted and wild coast, which attracts surfers 
+                    and water sport enthusiasts year-round. The Ox Mountains, Benbulben and Knocknarea 
+                    provide breath-taking, well-marked routes for walkers, and there are an abundance 
+                    of scenic driving and cycling routes. With historic sites dating back to early 
+                    civilisations in Ireland, and a modern, vibrant urban culture, Sligo offers an 
+                    enriching visitor experience.                                                 
+                                                                              
+
+                <br>    
+
+                <img src=https://cdn.shortpixel.ai/spai/q_lossy+w_953+to_webp+ret_img/www.sligo.ie/wp-content/uploads/slider-home-benbulben.jpg>
+        
+            </section>
+
+    </div>
+
+    <br>
+
+    <div class="container"><!-- Bootstrap-->
+
+        <div class="row mt-3 justify-content-center">
+
+        <!-- Ancient Landscapes Card-->
+
+            <div class="col-md-4 mb-4">
+                <div class="card left">
+                    <img src=https://cdn.shortpixel.ai/spai/q_lossy+w_985+to_webp+ret_img/www.sligo.ie/wp-content/uploads/slider-visit-carrowmore-knocknarea.jpg class="card-img-top" alt="ancientLandscapes">
+
+                    <!--<img> tag is used to embed images into a webpage.src specifies the path to the image file.alt helps to understand the content of the image-->
+
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Ancient Landscapes</h2>
+
+                        <p>
+                            Sligo’s archaeological and mythological heritage is incredibly rich, with one of the highest concentrations of prehistoric and later monuments in Western Europe with some dating back to 5,000BC.</p>
+                        <button class="btn btn-primary" onclick="bookNow('aincientLandscapes')">Book now!</button><!--using button element.onclick-event handler.bookNow(). This javeaScript function defines what is called by clicling the button-->
+                    </div>
+                </div>
+            </div>
+       
+            <!--Sligo Surf Experience-->
+            <div class="col-md-4 mb-4">
+                <div class="card right">
+                    <img src="https://www.sligosurfexperience.com/images/page/home-1692300226.jpg" class="card-img-top" alt="sligoSurfExperience">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Sligo Surf Experience</h2>
+                        <p>The National Surf Centre in Strandhill offers surf lessons for total beginners as well as improving surfers. All surfing equipment is provided by the school. You just need to bring swimming gear and a towel. .</p>
+                        <button class="btn btn-primary" onclick="bookNow('sligoSurfExperience')">Book now!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Lough Gill Brewery Tour-->
+            <div class="col-md-4 mb-4">
+                <div class="card left">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.GEg_ySbjiRZbuFDW04eMXAHaEK?w=290&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="loughGillBreweryTour">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Lough Gill Brewery Tour</h2>
+                        <p>Our brewery tour will lead you through our brewing processes and the rich brewing history here in Sligo. Each step with a beer in hand. finishing with beer samples and some food matches.</p>
+                        <button class="btn btn-primary" onclick="bookNow('loughGillBreweryTour')">Book now!</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script><!--link to JavaScript file-->
+
+</body>
+</html>
+
+<!-- Footer -->
+<footer class=" text-center py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo Section -->
+            <div class="col-sm-3 border-end">
+                <img src="Images/logo4.png" class="img-fluid" style="width: 80%;" alt="Logo">
+            </div>
+
+            <!-- Vision Section -->
+            <div class="col-sm-3 border-end">
+                <h3>Our Vision</h3>
+                <p>To inspire the world to discover and cherish Ireland through exceptional tourism and sustainable practices.</p>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="col-sm-3 border-end">
+                <h3>Our Mission</h3>
+                <p>To create unforgettable, authentic travel experiences that showcase Ireland's beauty, culture, and history.</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-sm-3">
+                <h3>Contact</h3>
+                <p>Some text...</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+     <h7>&#9426; Wonders Of Ireland 2024 </h7>
+</footer>
+<!-- End Footer -->
+
+
+
+
+
+ 
