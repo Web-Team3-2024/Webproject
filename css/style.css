@@ -183,12 +183,12 @@ filter: grayscale(1) invert(1);
  /********** AREAS  *******************/
 .area-1 {
    height: 500px; 
-   background: url(../images/side1.jpg) center center no-repeat;
+   background: url(../Images/side1.jpg) center center no-repeat;
    background-size: cover
 }
 .area-2 {
    height: 500px;  
-   background: url(../images/side2.jpg) center center no-repeat;
+   background: url(../Images/side2.jpg) center center no-repeat;
    background-size: cover
 }
 .are1-no-margin{
@@ -202,12 +202,12 @@ filter: grayscale(1) invert(1);
 }
 .area-3 {
    height: 500px; 
-   background: url(../images/side3.jpg) center center no-repeat;
+   background: url(../Images/side3.jpg) center center no-repeat;
    background-size: cover
 }
 .area-4 {
    height: 500px;  
-   background: url(../images/side4.jpg) center center no-repeat;
+   background: url(../Images/side4.jpg) center center no-repeat;
    background-size: cover
 }
 
